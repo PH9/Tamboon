@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16431D292661FE720003709F /* CharitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D282661FE720003709F /* CharitiesViewController.swift */; };
+		16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */; };
+		16431D2D2661FEBF0003709F /* CharitiesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */; };
 		168A39CA2661F852004FC38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39C92661F852004FC38C /* AppDelegate.swift */; };
 		168A39CC2661F852004FC38C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39CB2661F852004FC38C /* SceneDelegate.swift */; };
 		168A39CE2661F852004FC38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39CD2661F852004FC38C /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16431D282661FE720003709F /* CharitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesViewController.swift; sourceTree = "<group>"; };
+		16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesViewControllerTests.swift; sourceTree = "<group>"; };
+		16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesDataSource.swift; sourceTree = "<group>"; };
 		168A39C62661F852004FC38C /* Tamboon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tamboon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A39C92661F852004FC38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		168A39CB2661F852004FC38C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16431D272661FE560003709F /* Charities */ = {
+			isa = PBXGroup;
+			children = (
+				16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */,
+				16431D282661FE720003709F /* CharitiesViewController.swift */,
+				16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */,
+			);
+			path = Charities;
+			sourceTree = "<group>";
+		};
 		168A39BD2661F852004FC38C = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +120,7 @@
 				168A39CD2661F852004FC38C /* ViewController.swift */,
 				168A39CF2661F852004FC38C /* Main.storyboard */,
 				168A39D22661F853004FC38C /* Assets.xcassets */,
+				16431D272661FE560003709F /* Charities */,
 				168A39D42661F853004FC38C /* LaunchScreen.storyboard */,
 				168A39D72661F853004FC38C /* Info.plist */,
 			);
@@ -259,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				168A39CE2661F852004FC38C /* ViewController.swift in Sources */,
+				16431D2D2661FEBF0003709F /* CharitiesDataSource.swift in Sources */,
 				168A39CA2661F852004FC38C /* AppDelegate.swift in Sources */,
 				168A39CC2661F852004FC38C /* SceneDelegate.swift in Sources */,
+				16431D292661FE720003709F /* CharitiesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				168A39E12661F853004FC38C /* TamboonTests.swift in Sources */,
+				16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
