@@ -10,7 +10,7 @@ Since Swift Language has many ways to write. So I propose these style guides to 
 - Google's Swift Style [Guide](https://google.github.io/swift)
 - Swift.org's [documentation](https://swift.org/documentation)
 
-## Setup tools
+## Tools
 
 The tools that Tamboom is using for keeping consistency in the codebase.
 
@@ -21,10 +21,16 @@ auto-formatting but cannot good at integrating with Xcode.
 - ~~[Tailor](https://github.com/zalando/tailor)~~ Just want to give it the name
 that I know, but don't use. It is slow, deprecated and suggests to use
 SwiftLint instead 🤣.
+- [pre-commit](https://pre-commit.com) is using for checking before commit.
+
+### Install tools
 
 Use may install via [brew](https://brew.sh). I already provide
 [Brewfile](Brewfile) in the project after you installed brew. You can use a
 simple command `brew bundle` to install needed tools.
 
-Too avoid insonsistance in brew's dependencies so we also provide
+To avoid inconsistency in brew's dependencies so we also provide
 `Brewfile.lock.json` into the project.
+
+To use `pre-commit` you must setup it first by using the command
+`pre-commit install`
