@@ -115,14 +115,14 @@
 		168A39C82661F852004FC38C /* Tamboon */ = {
 			isa = PBXGroup;
 			children = (
+				168A39D72661F853004FC38C /* Info.plist */,
 				168A39C92661F852004FC38C /* AppDelegate.swift */,
 				168A39CB2661F852004FC38C /* SceneDelegate.swift */,
 				168A39CD2661F852004FC38C /* ViewController.swift */,
-				168A39CF2661F852004FC38C /* Main.storyboard */,
 				168A39D22661F853004FC38C /* Assets.xcassets */,
 				16431D272661FE560003709F /* Charities */,
 				168A39D42661F853004FC38C /* LaunchScreen.storyboard */,
-				168A39D72661F853004FC38C /* Info.plist */,
+				168A39CF2661F852004FC38C /* Main.storyboard */,
 			);
 			path = Tamboon;
 			sourceTree = "<group>";
