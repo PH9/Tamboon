@@ -23,6 +23,10 @@
 		16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */; };
 		16F57096266BC9CC0094D4EA /* CharitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F57095266BC9CC0094D4EA /* CharitiesInteractor.swift */; };
 		16F57098266BCA160094D4EA /* CharitiesInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F57097266BCA160094D4EA /* CharitiesInteractorSpy.swift */; };
+		16F5709A266BD2F20094D4EA /* CharitiesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F57099266BD2F20094D4EA /* CharitiesWorker.swift */; };
+		16F5709C266BD3530094D4EA /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5709B266BD3530094D4EA /* Charity.swift */; };
+		16F5709E266BD4080094D4EA /* CharitiesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5709D266BD4080094D4EA /* CharitiesInteractorTests.swift */; };
+		16F570A0266BD4530094D4EA /* CharitiesWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F5709F266BD4530094D4EA /* CharitiesWorkerSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesDataSourceTests.swift; sourceTree = "<group>"; };
 		16F57095266BC9CC0094D4EA /* CharitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesInteractor.swift; sourceTree = "<group>"; };
 		16F57097266BCA160094D4EA /* CharitiesInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesInteractorSpy.swift; sourceTree = "<group>"; };
+		16F57099266BD2F20094D4EA /* CharitiesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesWorker.swift; sourceTree = "<group>"; };
+		16F5709B266BD3530094D4EA /* Charity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charity.swift; sourceTree = "<group>"; };
+		16F5709D266BD4080094D4EA /* CharitiesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesInteractorTests.swift; sourceTree = "<group>"; };
+		16F5709F266BD4530094D4EA /* CharitiesWorkerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesWorkerSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +120,12 @@
 				16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */,
 				16F57095266BC9CC0094D4EA /* CharitiesInteractor.swift */,
 				16F57097266BCA160094D4EA /* CharitiesInteractorSpy.swift */,
+				16F5709D266BD4080094D4EA /* CharitiesInteractorTests.swift */,
 				16431D282661FE720003709F /* CharitiesViewController.swift */,
 				16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */,
+				16F57099266BD2F20094D4EA /* CharitiesWorker.swift */,
+				16F5709F266BD4530094D4EA /* CharitiesWorkerSpy.swift */,
+				16F5709B266BD3530094D4EA /* Charity.swift */,
 			);
 			path = Charities;
 			sourceTree = "<group>";
@@ -308,9 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F5709A266BD2F20094D4EA /* CharitiesWorker.swift in Sources */,
 				168A39CE2661F852004FC38C /* ViewController.swift in Sources */,
 				16431D2D2661FEBF0003709F /* CharitiesDataSource.swift in Sources */,
 				168A39CA2661F852004FC38C /* AppDelegate.swift in Sources */,
+				16F5709C266BD3530094D4EA /* Charity.swift in Sources */,
 				168A39CC2661F852004FC38C /* SceneDelegate.swift in Sources */,
 				16431D292661FE720003709F /* CharitiesViewController.swift in Sources */,
 				16F57096266BC9CC0094D4EA /* CharitiesInteractor.swift in Sources */,
@@ -325,6 +339,8 @@
 				16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */,
 				16F57098266BCA160094D4EA /* CharitiesInteractorSpy.swift in Sources */,
 				16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */,
+				16F5709E266BD4080094D4EA /* CharitiesInteractorTests.swift in Sources */,
+				16F570A0266BD4530094D4EA /* CharitiesWorkerSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
