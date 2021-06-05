@@ -1,4 +1,4 @@
-name: Swift
+name: Build and Test
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   tamboon-testing:
-
+    name: Tamboon Build & Test
     runs-on: macos-latest
 
     steps:
@@ -29,6 +29,7 @@ jobs:
             | xcpretty
 
   tamboon-api-testing:
+    name: TamboonAPI Build & Test
     runs-on: macos-latest
 
     steps:
