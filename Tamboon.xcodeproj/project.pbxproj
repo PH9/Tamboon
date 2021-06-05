@@ -20,6 +20,7 @@
 		168A39EC2661F853004FC38C /* TamboonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39EB2661F853004FC38C /* TamboonUITests.swift */; };
 		16F57090266BC6380094D4EA /* OmiseSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 16F5708F266BC6380094D4EA /* OmiseSDK */; };
 		16F57091266BC6380094D4EA /* OmiseSDK in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 16F5708F266BC6380094D4EA /* OmiseSDK */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		168A39E72661F853004FC38C /* TamboonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TamboonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A39EB2661F853004FC38C /* TamboonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamboonUITests.swift; sourceTree = "<group>"; };
 		168A39ED2661F853004FC38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesDataSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */,
+				16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */,
 				16431D282661FE720003709F /* CharitiesViewController.swift */,
 				16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */,
 			);
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				168A39E12661F853004FC38C /* TamboonTests.swift in Sources */,
+				16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */,
 				16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

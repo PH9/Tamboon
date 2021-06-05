@@ -5,7 +5,12 @@ class CharitiesDataSource: NSObject, UITableViewDataSource {
     0
   }
 
-  func tableView(_: UITableView, cellForRowAt _: IndexPath) -> UITableViewCell {
-    UITableViewCell()
+  func tableView(_ tableView: UITableView, cellForRowAt _: IndexPath) -> UITableViewCell {
+    let cellReuseIdentifier = "reusableCellIdentifier"
+    var cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)
+    if cell == nil {
+      cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellReuseIdentifier)
+    }
+    return cell!
   }
 }
