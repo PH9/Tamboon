@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  tamboon-testing:
 
     runs-on: macos-latest
 
@@ -21,8 +21,23 @@ jobs:
           ${{ runner.os }}-spm-
     - name: Build & Tests
       run: |
-        set -o pipefail && 
+        set -o pipefail &&
           xcodebuild test \
+            -workspace Tamboon.xcworkspace \
             -scheme Tamboon \
+            -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' \
+            | xcpretty
+
+  tamboon-api-testing:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build & Tests
+      run: |
+        set -o pipefail &&
+          xcodebuild test \
+            -workspace Tamboon.xcworkspace \
+            -scheme TamboonAPI \
             -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' \
             | xcpretty
