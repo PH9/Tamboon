@@ -20,4 +20,9 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-spm-
     - name: Build & Tests
-      run: xcodebuild test -scheme Tamboon -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.4'
+      run: |
+        set -o pipefail && 
+          xcodebuild test \
+            -scheme Tamboon \
+            -destination 'platform=iOS Simulator,name=iPhone 12,OS=latest' \
+            | xcpretty
