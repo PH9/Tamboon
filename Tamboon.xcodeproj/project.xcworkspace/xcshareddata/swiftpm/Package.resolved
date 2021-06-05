@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OmiseSDK",
+        "repositoryURL": "https://github.com/omise/omise-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "ff8a4d909b4fd88fedd53662a83213f0cad4b285",
+          "version": "4.3.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
