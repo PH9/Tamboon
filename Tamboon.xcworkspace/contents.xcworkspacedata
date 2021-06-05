@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Tamboon.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:TamboonAPI/TamboonAPI.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "168A39C52661F852004FC38C"
-               BuildableName = "Tamboon.app"
-               BlueprintName = "Tamboon"
-               ReferencedContainer = "container:Tamboon.xcodeproj">
+               BlueprintIdentifier = "16698EA9266BDA3600EC163B"
+               BuildableName = "libTamboonAPI.a"
+               BlueprintName = "TamboonAPI"
+               ReferencedContainer = "container:TamboonAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "168A39C52661F852004FC38C"
-            BuildableName = "Tamboon.app"
-            BlueprintName = "Tamboon"
-            ReferencedContainer = "container:Tamboon.xcodeproj">
+            BlueprintIdentifier = "16698EA9266BDA3600EC163B"
+            BuildableName = "libTamboonAPI.a"
+            BlueprintName = "TamboonAPI"
+            ReferencedContainer = "container:TamboonAPI.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -45,22 +45,10 @@
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "168A39DB2661F853004FC38C"
-               BuildableName = "TamboonTests.xctest"
-               BlueprintName = "TamboonTests"
-               ReferencedContainer = "container:Tamboon.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES"
-            parallelizable = "YES"
-            testExecutionOrdering = "random">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "168A39E62661F853004FC38C"
-               BuildableName = "TamboonUITests.xctest"
-               BlueprintName = "TamboonUITests"
-               ReferencedContainer = "container:Tamboon.xcodeproj">
+               BlueprintIdentifier = "16698EBA266BDA8D00EC163B"
+               BuildableName = "TamboonAPITests.xctest"
+               BlueprintName = "TamboonAPITests"
+               ReferencedContainer = "container:TamboonAPI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -75,16 +63,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "168A39C52661F852004FC38C"
-            BuildableName = "Tamboon.app"
-            BlueprintName = "Tamboon"
-            ReferencedContainer = "container:Tamboon.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -92,16 +70,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "168A39C52661F852004FC38C"
-            BuildableName = "Tamboon.app"
-            BlueprintName = "Tamboon"
-            ReferencedContainer = "container:Tamboon.xcodeproj">
+            BlueprintIdentifier = "16698EA9266BDA3600EC163B"
+            BuildableName = "libTamboonAPI.a"
+            BlueprintName = "TamboonAPI"
+            ReferencedContainer = "container:TamboonAPI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

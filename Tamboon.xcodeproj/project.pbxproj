@@ -10,6 +10,7 @@
 		16431D292661FE720003709F /* CharitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D282661FE720003709F /* CharitiesViewController.swift */; };
 		16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */; };
 		16431D2D2661FEBF0003709F /* CharitiesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */; };
+		16698EB6266BDA3F00EC163B /* libTamboonAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16698EB5266BDA3F00EC163B /* libTamboonAPI.a */; };
 		168A39CA2661F852004FC38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39C92661F852004FC38C /* AppDelegate.swift */; };
 		168A39CC2661F852004FC38C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39CB2661F852004FC38C /* SceneDelegate.swift */; };
 		168A39CE2661F852004FC38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39CD2661F852004FC38C /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 		16431D282661FE720003709F /* CharitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesViewController.swift; sourceTree = "<group>"; };
 		16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesViewControllerTests.swift; sourceTree = "<group>"; };
 		16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesDataSource.swift; sourceTree = "<group>"; };
+		16698EB5266BDA3F00EC163B /* libTamboonAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTamboonAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A39C62661F852004FC38C /* Tamboon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tamboon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A39C92661F852004FC38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		168A39CB2661F852004FC38C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F57090266BC6380094D4EA /* OmiseSDK in Frameworks */,
+				16698EB6266BDA3F00EC163B /* libTamboonAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,13 +133,22 @@
 			path = Charities;
 			sourceTree = "<group>";
 		};
+		16698EB4266BDA3F00EC163B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16698EB5266BDA3F00EC163B /* libTamboonAPI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		168A39BD2661F852004FC38C = {
 			isa = PBXGroup;
 			children = (
+				16698EB4266BDA3F00EC163B /* Frameworks */,
+				168A39C72661F852004FC38C /* Products */,
 				168A39C82661F852004FC38C /* Tamboon */,
 				168A39DF2661F853004FC38C /* TamboonTests */,
 				168A39EA2661F853004FC38C /* TamboonUITests */,
-				168A39C72661F852004FC38C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
