@@ -9,4 +9,14 @@ final class CharitiesViewControllerTests: XCTestCase {
 
     XCTAssert(sut.tableView.dataSource is CharitiesDataSource)
   }
+
+  func test_viewDidLoad_shouldCallGetCharities() {
+    let sut = CharitiesViewController()
+    let interactorSpy = CharitiesInteractorSpy()
+    sut.interactor = interactorSpy
+
+    _ = sut.view
+
+    XCTAssertEqual(interactorSpy.getCharitiesCalledCount, 1)
+  }
 }
