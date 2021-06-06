@@ -17,12 +17,15 @@
 		168A39D12661F852004FC38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168A39CF2661F852004FC38C /* Main.storyboard */; };
 		168A39D32661F853004FC38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 168A39D22661F853004FC38C /* Assets.xcassets */; };
 		168A39D62661F853004FC38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168A39D42661F853004FC38C /* LaunchScreen.storyboard */; };
-		168A39E12661F853004FC38C /* TamboonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39E02661F853004FC38C /* TamboonTests.swift */; };
+		168A39E12661F853004FC38C /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39E02661F853004FC38C /* TestCase.swift */; };
 		168A39EC2661F853004FC38C /* TamboonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39EB2661F853004FC38C /* TamboonUITests.swift */; };
 		16E518F4266C87D400B2CD77 /* URLSessionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518F3266C87D400B2CD77 /* URLSessionSpy.swift */; };
 		16E518F7266C8A5D00B2CD77 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518F6266C8A5D00B2CD77 /* APIError.swift */; };
 		16E518F9266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518F8266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift */; };
 		16E518FB266C8B2400B2CD77 /* CharitiesWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518FA266C8B2400B2CD77 /* CharitiesWorkerTests.swift */; };
+		16E518FD266C8C7F00B2CD77 /* CharitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518FC266C8C7F00B2CD77 /* CharitiesPresenter.swift */; };
+		16E518FF266C8DE300B2CD77 /* CharitiesPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518FE266C8DE300B2CD77 /* CharitiesPresenterSpy.swift */; };
+		16E51905266C934A00B2CD77 /* CharitiesTests.json in Resources */ = {isa = PBXBuildFile; fileRef = 16E51903266C934100B2CD77 /* CharitiesTests.json */; };
 		16F57090266BC6380094D4EA /* OmiseSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 16F5708F266BC6380094D4EA /* OmiseSDK */; };
 		16F57091266BC6380094D4EA /* OmiseSDK in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 16F5708F266BC6380094D4EA /* OmiseSDK */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */; };
@@ -79,7 +82,7 @@
 		168A39D52661F853004FC38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		168A39D72661F853004FC38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		168A39DC2661F853004FC38C /* TamboonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TamboonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		168A39E02661F853004FC38C /* TamboonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamboonTests.swift; sourceTree = "<group>"; };
+		168A39E02661F853004FC38C /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		168A39E22661F853004FC38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		168A39E72661F853004FC38C /* TamboonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TamboonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A39EB2661F853004FC38C /* TamboonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamboonUITests.swift; sourceTree = "<group>"; };
@@ -88,6 +91,9 @@
 		16E518F6266C8A5D00B2CD77 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		16E518F8266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskSpy.swift; sourceTree = "<group>"; };
 		16E518FA266C8B2400B2CD77 /* CharitiesWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesWorkerTests.swift; sourceTree = "<group>"; };
+		16E518FC266C8C7F00B2CD77 /* CharitiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesPresenter.swift; sourceTree = "<group>"; };
+		16E518FE266C8DE300B2CD77 /* CharitiesPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesPresenterSpy.swift; sourceTree = "<group>"; };
+		16E51903266C934100B2CD77 /* CharitiesTests.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CharitiesTests.json; sourceTree = "<group>"; };
 		16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesDataSourceTests.swift; sourceTree = "<group>"; };
 		16F57095266BC9CC0094D4EA /* CharitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesInteractor.swift; sourceTree = "<group>"; };
 		16F57097266BCA160094D4EA /* CharitiesInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesInteractorSpy.swift; sourceTree = "<group>"; };
@@ -132,6 +138,9 @@
 				16F57095266BC9CC0094D4EA /* CharitiesInteractor.swift */,
 				16F57097266BCA160094D4EA /* CharitiesInteractorSpy.swift */,
 				16F5709D266BD4080094D4EA /* CharitiesInteractorTests.swift */,
+				16E518FC266C8C7F00B2CD77 /* CharitiesPresenter.swift */,
+				16E518FE266C8DE300B2CD77 /* CharitiesPresenterSpy.swift */,
+				16E51903266C934100B2CD77 /* CharitiesTests.json */,
 				16431D282661FE720003709F /* CharitiesViewController.swift */,
 				16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */,
 				16E518F5266C8A4800B2CD77 /* Worker */,
@@ -186,7 +195,7 @@
 		168A39DF2661F853004FC38C /* TamboonTests */ = {
 			isa = PBXGroup;
 			children = (
-				168A39E02661F853004FC38C /* TamboonTests.swift */,
+				168A39E02661F853004FC38C /* TestCase.swift */,
 				168A39E22661F853004FC38C /* Info.plist */,
 			);
 			path = TamboonTests;
@@ -335,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E51905266C934A00B2CD77 /* CharitiesTests.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F5709A266BD2F20094D4EA /* CharitiesWorker.swift in Sources */,
+				16E518FD266C8C7F00B2CD77 /* CharitiesPresenter.swift in Sources */,
 				168A39CE2661F852004FC38C /* ViewController.swift in Sources */,
 				16431D2D2661FEBF0003709F /* CharitiesDataSource.swift in Sources */,
 				168A39CA2661F852004FC38C /* AppDelegate.swift in Sources */,
@@ -368,12 +379,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				168A39E12661F853004FC38C /* TamboonTests.swift in Sources */,
+				168A39E12661F853004FC38C /* TestCase.swift in Sources */,
 				16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */,
 				16E518FB266C8B2400B2CD77 /* CharitiesWorkerTests.swift in Sources */,
 				16F57098266BCA160094D4EA /* CharitiesInteractorSpy.swift in Sources */,
 				16E518F4266C87D400B2CD77 /* URLSessionSpy.swift in Sources */,
 				16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */,
+				16E518FF266C8DE300B2CD77 /* CharitiesPresenterSpy.swift in Sources */,
 				16F5709E266BD4080094D4EA /* CharitiesInteractorTests.swift in Sources */,
 				16E518F9266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift in Sources */,
 				16F570A0266BD4530094D4EA /* CharitiesWorkerSpy.swift in Sources */,

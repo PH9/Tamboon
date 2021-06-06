@@ -1,12 +1,16 @@
 class CharitiesInteractor {
   var charitiesWorker = CharitiesWorker()
+  var presenter = CharitiesPresenter()
 
   func getCharities() {
-    charitiesWorker.getCharities { result in
+    charitiesWorker.getCharities { [weak self] result in
+      guard let self = self else {
+        return
+      }
+
       switch result {
-      case .success:
-        // TODO: Handle success
-        break
+      case let .success(charities):
+        self.presenter.present(charities)
       case .failure:
         // TODO: Handle error
         break
