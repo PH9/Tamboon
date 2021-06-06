@@ -5,6 +5,7 @@ class URLSessionSpy: URLSession {
   var dataTaskDataStubbed: Data?
   var dataTaskURLResponseStubbed: URLResponse?
   var dataTaskErrorStubbed: Error?
+  var urlSessionDataTaskSpy: URLSessionDataTaskSpy?
   override func dataTask(
     with url: URL,
     completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void
@@ -13,6 +14,8 @@ class URLSessionSpy: URLSession {
       completionHandler(dataTaskDataStubbed, dataTaskURLResponseStubbed, dataTaskErrorStubbed)
     }
     dataTaskURL = url
-    return URLSessionDataTaskSpy()
+    let urlSessionDataTaskSpy = URLSessionDataTaskSpy()
+    self.urlSessionDataTaskSpy = urlSessionDataTaskSpy
+    return urlSessionDataTaskSpy
   }
 }
