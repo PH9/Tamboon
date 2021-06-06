@@ -19,6 +19,9 @@
 		168A39D62661F853004FC38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 168A39D42661F853004FC38C /* LaunchScreen.storyboard */; };
 		168A39E12661F853004FC38C /* TamboonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39E02661F853004FC38C /* TamboonTests.swift */; };
 		168A39EC2661F853004FC38C /* TamboonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39EB2661F853004FC38C /* TamboonUITests.swift */; };
+		16E518F4266C87D400B2CD77 /* URLSessionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518F3266C87D400B2CD77 /* URLSessionSpy.swift */; };
+		16E518F7266C8A5D00B2CD77 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518F6266C8A5D00B2CD77 /* APIError.swift */; };
+		16E518F9266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E518F8266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift */; };
 		16F57090266BC6380094D4EA /* OmiseSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 16F5708F266BC6380094D4EA /* OmiseSDK */; };
 		16F57091266BC6380094D4EA /* OmiseSDK in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 16F5708F266BC6380094D4EA /* OmiseSDK */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */; };
@@ -80,6 +83,9 @@
 		168A39E72661F853004FC38C /* TamboonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TamboonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A39EB2661F853004FC38C /* TamboonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamboonUITests.swift; sourceTree = "<group>"; };
 		168A39ED2661F853004FC38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E518F3266C87D400B2CD77 /* URLSessionSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionSpy.swift; sourceTree = "<group>"; };
+		16E518F6266C8A5D00B2CD77 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		16E518F8266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskSpy.swift; sourceTree = "<group>"; };
 		16F57093266BC7BD0094D4EA /* CharitiesDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesDataSourceTests.swift; sourceTree = "<group>"; };
 		16F57095266BC9CC0094D4EA /* CharitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesInteractor.swift; sourceTree = "<group>"; };
 		16F57097266BCA160094D4EA /* CharitiesInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesInteractorSpy.swift; sourceTree = "<group>"; };
@@ -126,9 +132,7 @@
 				16F5709D266BD4080094D4EA /* CharitiesInteractorTests.swift */,
 				16431D282661FE720003709F /* CharitiesViewController.swift */,
 				16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */,
-				16F57099266BD2F20094D4EA /* CharitiesWorker.swift */,
-				16F5709F266BD4530094D4EA /* CharitiesWorkerSpy.swift */,
-				16F5709B266BD3530094D4EA /* Charity.swift */,
+				16E518F5266C8A4800B2CD77 /* Worker */,
 			);
 			path = Charities;
 			sourceTree = "<group>";
@@ -193,6 +197,19 @@
 				168A39ED2661F853004FC38C /* Info.plist */,
 			);
 			path = TamboonUITests;
+			sourceTree = "<group>";
+		};
+		16E518F5266C8A4800B2CD77 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				16E518F6266C8A5D00B2CD77 /* APIError.swift */,
+				16F57099266BD2F20094D4EA /* CharitiesWorker.swift */,
+				16F5709F266BD4530094D4EA /* CharitiesWorkerSpy.swift */,
+				16F5709B266BD3530094D4EA /* Charity.swift */,
+				16E518F8266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift */,
+				16E518F3266C87D400B2CD77 /* URLSessionSpy.swift */,
+			);
+			path = Worker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +357,7 @@
 				168A39CC2661F852004FC38C /* SceneDelegate.swift in Sources */,
 				16431D292661FE720003709F /* CharitiesViewController.swift in Sources */,
 				16F57096266BC9CC0094D4EA /* CharitiesInteractor.swift in Sources */,
+				16E518F7266C8A5D00B2CD77 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +368,10 @@
 				168A39E12661F853004FC38C /* TamboonTests.swift in Sources */,
 				16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */,
 				16F57098266BCA160094D4EA /* CharitiesInteractorSpy.swift in Sources */,
+				16E518F4266C87D400B2CD77 /* URLSessionSpy.swift in Sources */,
 				16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */,
 				16F5709E266BD4080094D4EA /* CharitiesInteractorTests.swift in Sources */,
+				16E518F9266C8A8200B2CD77 /* URLSessionDataTaskSpy.swift in Sources */,
 				16F570A0266BD4530094D4EA /* CharitiesWorkerSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
