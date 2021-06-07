@@ -13,6 +13,8 @@ final class CharitiesViewController: UITableViewController {
 
   func present(_ charities: [CharityViewModel]) {
     dataSource.load(charities)
-    tableView.reloadData()
+    DispatchQueue.main.async {
+      self.tableView.reloadData()
+    }
   }
 }
