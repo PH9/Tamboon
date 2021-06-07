@@ -19,8 +19,15 @@ class CharitiesDataSource: NSObject, UITableViewDataSource {
       cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellReuseIdentifier)
     }
     let row = indexPath.row
-    cell?.textLabel?.text = values[row].name
-    // TODO: Set charity image here
+    let value = values[row]
+    cell?.textLabel?.text = value.name
+    if cell?.accessoryView == nil {
+      let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 22, height: 22))
+      imageView.setImage(with: value.logo)
+      cell?.accessoryView = imageView
+    } else if let imageView = cell?.accessoryView as? UIImageView {
+      imageView.setImage(with: value.logo)
+    }
     return cell!
   }
 }

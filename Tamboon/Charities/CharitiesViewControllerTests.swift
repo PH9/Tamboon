@@ -1,7 +1,7 @@
 @testable import Tamboon
 import XCTest
 
-final class CharitiesViewControllerTests: XCTestCase {
+final class CharitiesViewControllerTests: TestCase {
   let sut = CharitiesViewController()
   var interactorSpy: CharitiesInteractorSpy!
 

@@ -10,7 +10,7 @@ class CharitiesDataSourceTests: XCTestCase {
       CharityViewModel(name: .placeholder, logo: .placeholder),
     ])
 
-    let cell = sut.tableView(placeholderTableView, cellForRowAt: .init())
+    let cell = sut.tableView(placeholderTableView, cellForRowAt: IndexPath(row: 0, section: 0))
 
     XCTAssertNotNil(cell.textLabel)
     XCTAssertNotNil(cell.detailTextLabel)

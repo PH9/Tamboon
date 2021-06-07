@@ -11,6 +11,9 @@
 		16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */; };
 		16431D2D2661FEBF0003709F /* CharitiesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */; };
 		16698EB6266BDA3F00EC163B /* libTamboonAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16698EB5266BDA3F00EC163B /* libTamboonAPI.a */; };
+		16895FED266DCE23001062FD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 16895FEC266DCE23001062FD /* Kingfisher */; };
+		16895FF0266DD15C001062FD /* UIImage+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16895FEF266DD15C001062FD /* UIImage+setImage.swift */; };
+		16895FF2266DD196001062FD /* Value+placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16895FF1266DD196001062FD /* Value+placeholder.swift */; };
 		168A39CA2661F852004FC38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39C92661F852004FC38C /* AppDelegate.swift */; };
 		168A39CC2661F852004FC38C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39CB2661F852004FC38C /* SceneDelegate.swift */; };
 		168A39CE2661F852004FC38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39CD2661F852004FC38C /* ViewController.swift */; };
@@ -74,6 +77,8 @@
 		16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharitiesDataSource.swift; sourceTree = "<group>"; };
 		16698EB5266BDA3F00EC163B /* libTamboonAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTamboonAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		16895F11266DC266001062FD /* InfoDebug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoDebug.plist; sourceTree = "<group>"; };
+		16895FEF266DD15C001062FD /* UIImage+setImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+setImage.swift"; sourceTree = "<group>"; };
+		16895FF1266DD196001062FD /* Value+placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Value+placeholder.swift"; sourceTree = "<group>"; };
 		168A39C62661F852004FC38C /* Tamboon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tamboon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A39C92661F852004FC38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		168A39CB2661F852004FC38C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16895FED266DCE23001062FD /* Kingfisher in Frameworks */,
 				16F57090266BC6380094D4EA /* OmiseSDK in Frameworks */,
 				16698EB6266BDA3F00EC163B /* libTamboonAPI.a in Frameworks */,
 			);
@@ -157,6 +163,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		16895FEE266DD15C001062FD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				16895FEF266DD15C001062FD /* UIImage+setImage.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		168A39BD2661F852004FC38C = {
 			isa = PBXGroup;
 			children = (
@@ -181,15 +195,16 @@
 		168A39C82661F852004FC38C /* Tamboon */ = {
 			isa = PBXGroup;
 			children = (
-				168A39D72661F853004FC38C /* Info.plist */,
-				16895F11266DC266001062FD /* InfoDebug.plist */,
 				168A39C92661F852004FC38C /* AppDelegate.swift */,
-				168A39CB2661F852004FC38C /* SceneDelegate.swift */,
-				168A39CD2661F852004FC38C /* ViewController.swift */,
 				168A39D22661F853004FC38C /* Assets.xcassets */,
 				16431D272661FE560003709F /* Charities */,
+				168A39D72661F853004FC38C /* Info.plist */,
+				16895F11266DC266001062FD /* InfoDebug.plist */,
 				168A39D42661F853004FC38C /* LaunchScreen.storyboard */,
+				16895FEE266DD15C001062FD /* Library */,
 				168A39CF2661F852004FC38C /* Main.storyboard */,
+				168A39CB2661F852004FC38C /* SceneDelegate.swift */,
+				168A39CD2661F852004FC38C /* ViewController.swift */,
 			);
 			path = Tamboon;
 			sourceTree = "<group>";
@@ -197,8 +212,9 @@
 		168A39DF2661F853004FC38C /* TamboonTests */ = {
 			isa = PBXGroup;
 			children = (
-				168A39E02661F853004FC38C /* TestCase.swift */,
 				168A39E22661F853004FC38C /* Info.plist */,
+				168A39E02661F853004FC38C /* TestCase.swift */,
+				16895FF1266DD196001062FD /* Value+placeholder.swift */,
 			);
 			path = TamboonTests;
 			sourceTree = "<group>";
@@ -245,6 +261,7 @@
 			name = Tamboon;
 			packageProductDependencies = (
 				16F5708F266BC6380094D4EA /* OmiseSDK */,
+				16895FEC266DCE23001062FD /* Kingfisher */,
 			);
 			productName = Tamboon;
 			productReference = 168A39C62661F852004FC38C /* Tamboon.app */;
@@ -319,6 +336,7 @@
 			mainGroup = 168A39BD2661F852004FC38C;
 			packageReferences = (
 				16F5708E266BC6380094D4EA /* XCRemoteSwiftPackageReference "omise-ios" */,
+				16895FEB266DCE23001062FD /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 168A39C72661F852004FC38C /* Products */;
 			projectDirPath = "";
@@ -366,6 +384,7 @@
 			files = (
 				16F5709A266BD2F20094D4EA /* CharitiesWorker.swift in Sources */,
 				16E518FD266C8C7F00B2CD77 /* CharitiesPresenter.swift in Sources */,
+				16895FF0266DD15C001062FD /* UIImage+setImage.swift in Sources */,
 				168A39CE2661F852004FC38C /* ViewController.swift in Sources */,
 				16431D2D2661FEBF0003709F /* CharitiesDataSource.swift in Sources */,
 				168A39CA2661F852004FC38C /* AppDelegate.swift in Sources */,
@@ -381,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16895FF2266DD196001062FD /* Value+placeholder.swift in Sources */,
 				168A39E12661F853004FC38C /* TestCase.swift in Sources */,
 				16F57094266BC7BD0094D4EA /* CharitiesDataSourceTests.swift in Sources */,
 				16E518FB266C8B2400B2CD77 /* CharitiesWorkerTests.swift in Sources */,
@@ -709,6 +729,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		16895FEB266DCE23001062FD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
 		16F5708E266BC6380094D4EA /* XCRemoteSwiftPackageReference "omise-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/omise/omise-ios.git";
@@ -720,6 +748,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		16895FEC266DCE23001062FD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16895FEB266DCE23001062FD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		16F5708F266BC6380094D4EA /* OmiseSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 16F5708E266BC6380094D4EA /* XCRemoteSwiftPackageReference "omise-ios" */;
