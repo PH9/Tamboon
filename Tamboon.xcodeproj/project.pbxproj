@@ -10,10 +10,10 @@
 		16431D292661FE720003709F /* CharitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D282661FE720003709F /* CharitiesViewController.swift */; };
 		16431D2B2661FE970003709F /* CharitiesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D2A2661FE970003709F /* CharitiesViewControllerTests.swift */; };
 		16431D2D2661FEBF0003709F /* CharitiesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16431D2C2661FEBF0003709F /* CharitiesDataSource.swift */; };
-		16698EB6266BDA3F00EC163B /* libTamboonAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16698EB5266BDA3F00EC163B /* libTamboonAPI.a */; };
 		16895FED266DCE23001062FD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 16895FEC266DCE23001062FD /* Kingfisher */; };
 		16895FF0266DD15C001062FD /* UIImage+setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16895FEF266DD15C001062FD /* UIImage+setImage.swift */; };
 		16895FF2266DD196001062FD /* Value+placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16895FF1266DD196001062FD /* Value+placeholder.swift */; };
+		16895FF4266DDD18001062FD /* FBSnapshotTestCase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16895FF3266DDD18001062FD /* FBSnapshotTestCase.xcframework */; };
 		168A39CA2661F852004FC38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39C92661F852004FC38C /* AppDelegate.swift */; };
 		168A39CC2661F852004FC38C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39CB2661F852004FC38C /* SceneDelegate.swift */; };
 		168A39CE2661F852004FC38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168A39CD2661F852004FC38C /* ViewController.swift */; };
@@ -79,6 +79,7 @@
 		16895F11266DC266001062FD /* InfoDebug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoDebug.plist; sourceTree = "<group>"; };
 		16895FEF266DD15C001062FD /* UIImage+setImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+setImage.swift"; sourceTree = "<group>"; };
 		16895FF1266DD196001062FD /* Value+placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Value+placeholder.swift"; sourceTree = "<group>"; };
+		16895FF3266DDD18001062FD /* FBSnapshotTestCase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FBSnapshotTestCase.xcframework; path = Carthage/Build/FBSnapshotTestCase.xcframework; sourceTree = "<group>"; };
 		168A39C62661F852004FC38C /* Tamboon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tamboon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		168A39C92661F852004FC38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		168A39CB2661F852004FC38C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +117,6 @@
 			files = (
 				16895FED266DCE23001062FD /* Kingfisher in Frameworks */,
 				16F57090266BC6380094D4EA /* OmiseSDK in Frameworks */,
-				16698EB6266BDA3F00EC163B /* libTamboonAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16895FF4266DDD18001062FD /* FBSnapshotTestCase.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +159,7 @@
 		16698EB4266BDA3F00EC163B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16895FF3266DDD18001062FD /* FBSnapshotTestCase.xcframework */,
 				16698EB5266BDA3F00EC163B /* libTamboonAPI.a */,
 			);
 			name = Frameworks;

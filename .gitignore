@@ -1,6 +1,10 @@
 ## Build artifacts
+Carthage/Build
+Carthage/Checkouts
 DerivedData/
+
+## Test's result
+Screenshots/FailureDiffs/
 
 ## User's settings
 xcuserdata
-

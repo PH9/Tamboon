@@ -1,7 +1,8 @@
+import FBSnapshotTestCase
 import XCTest
 
 // swiftlint:disable force_try
-class TestCase: XCTestCase {
+class TestCase: FBSnapshotTestCase {
   func read<T: Decodable>(filename: String) -> T {
     let path = Bundle(for: Self.self).path(forResource: filename, ofType: "json")!
     let url = URL(fileURLWithPath: path)
