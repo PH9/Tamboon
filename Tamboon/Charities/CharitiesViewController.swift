@@ -11,7 +11,8 @@ final class CharitiesViewController: UITableViewController {
     interactor.getCharities()
   }
 
-  func present(_: [CharityViewModel]) {
-    // TODO: set charities to dataSource
+  func present(_ charities: [CharityViewModel]) {
+    dataSource.load(charities)
+    tableView.reloadData()
   }
 }

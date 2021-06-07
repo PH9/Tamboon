@@ -22,4 +22,14 @@ final class CharitiesViewControllerTests: XCTestCase {
 
     XCTAssertEqual(interactorSpy.getCharitiesCalledCount, 1)
   }
+
+  // TODO: Snapshot here
+  func test_presentCharities() {
+    sut.present([
+      CharityViewModel(name: "name1", logo: URL(string: "scheme://domain/path.extension")!),
+    ])
+
+    let numberOfRowInSection = sut.tableView.dataSource?.tableView(sut.tableView, numberOfRowsInSection: 0)
+    XCTAssertEqual(numberOfRowInSection, 1)
+  }
 }
