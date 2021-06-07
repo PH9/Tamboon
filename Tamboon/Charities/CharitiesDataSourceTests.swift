@@ -6,6 +6,9 @@ class CharitiesDataSourceTests: XCTestCase {
 
   func test_cellShouldContainsTextLabelAndDetailsLabel_withReuseableIdentifier() {
     let placeholderTableView = UITableView()
+    sut.load([
+      CharityViewModel(name: .placeholder, logo: .placeholder),
+    ])
 
     let cell = sut.tableView(placeholderTableView, cellForRowAt: .init())
 
